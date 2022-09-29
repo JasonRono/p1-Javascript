@@ -44,3 +44,4 @@ function calculateMinutes(seconden, minuten) {
 }
 
 calculateMinutes();//Roept de functie op.
+
