@@ -1,3 +1,3 @@
 let title = document.getElementById('Titel');
-title.style.backgroundColor = 'red';
+title.style.color = 'red';
 title.innerText = 'Ik ben veranderd';
