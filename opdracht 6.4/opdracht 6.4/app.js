@@ -40,7 +40,7 @@ checkInput();//Roep de functie op.
 function calculateMinutes(seconden, minuten) {
     seconden = Number(prompt('Type een getal in'));
     minuten = seconden / 60;//Hier worden de secondes in minuten omgerekend.
-    console.log(minuten + ' minuten');//Laat het antwoord zien in de console. 
+    alert(minuten + ' minuten');//Laat het antwoord zien in de console. 
 }
 
 calculateMinutes();//Roept de functie op.
