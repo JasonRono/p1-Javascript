@@ -37,13 +37,13 @@ function generateComputerChoice() {
         computerChoice.innerHTML = 'scissors';
     }
 
-    //Console.log wat de uitslag is.
+    //Console.log wat de uitslag is van het random nummer die gepakt word.
     console.log(computer);
 }
 
-//Functie die het resultaat uitrekend.
+//Functie die het resultaat uitrekent.
 function getResult() {
-    //If else statements als er je hebt gewonnen of verloren
+    //If else statements als je hebt gewonnen of verloren.
     if (computer == player) {
         resultOutput.innerText = 'Gelijkspel';
     } else if (computer == 'rock' && player == 'paper') {
