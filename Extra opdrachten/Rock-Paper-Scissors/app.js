@@ -43,7 +43,7 @@ function generateComputerChoice() {
 
 //Functie die het resultaat uitrekent.
 function getResult() {
-    //If else statements als je hebt gewonnen of verloren.
+    //If else statements als je hebt gewonnen of verloren en als het gelijkspel is.
     if (computer == player) {
         resultOutput.innerText = 'Gelijkspel';
     } else if (computer == 'rock' && player == 'paper') {
