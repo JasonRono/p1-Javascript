@@ -33,7 +33,7 @@ function generateComputerChoice() {
         computer = 'paper';
         computerChoice.innerHTML = 'paper';
     } if (randomNumber == 3) {
-        computer = 'scrissors';
+        computer = 'scissors';
         computerChoice.innerHTML = 'scissors';
     }
 
@@ -43,12 +43,20 @@ function generateComputerChoice() {
 
 //Functie die het resultaat uitrekend.
 function getResult() {
+    //If else statements als er je hebt gewonnen of verloren
     if (computer == player) {
         resultOutput.innerText = 'Gelijkspel';
-    } else if (computer != player) {
-        resultOutput.innerText = 'je hebt verloren';
-    } else {
-        resultOutput.innerText = 'je hebt gewonnen';
+    } else if (computer == 'rock' && player == 'paper') {
+        resultOutput.innerText = 'Je hebt gewonnen';
+    } else if (computer == 'rock' && player == 'scissors') {
+        resultOutput.innerText = 'Je hebt verloren';
+    } else if (computer == 'paper' && player == 'scissors') {
+        resultOutput.innerText = 'Je hebt gewonnen';
+    } else if (computer == 'paper' && player == 'rock') {
+        resultOutput.innerText = 'Je hebt verloren';
+    } else if (computer == 'scissors' && player == 'rock') {
+        resultOutput.innerText = 'Je hebt gewonnen';
+    } else if (computer == 'scissors' && player == 'paper') {
+        resultOutput.innerText = 'Je hebt verloren';
     }
 }
-
