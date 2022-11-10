@@ -19,8 +19,4 @@ function add() {
 function devide() {
     let devideAnswer = inputValue1.value / inputValue2.value;
     answerText.innerText = 'Het antwoord is ' + devideAnswer;
-
-    if (devideAnswer == 0) {
-        answerText.innerText = 'Het anwtoord is ';
-    }
 }

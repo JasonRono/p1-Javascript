@@ -1,7 +1,6 @@
 const closedFace = document.querySelector('.closed');
 const openFace = document.querySelector('.open');
 
-
 closedFace.addEventListener('click', function () {
     if (closedFace.classList.contains('active')) {
         closedFace.classList.remove('active');
